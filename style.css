@@ -149,7 +149,7 @@ a:hover {
 
 section {
     padding-top:4vh;
-    height: 96vh;
+    height: 100%;
     margin: 0 10rem;
     box-sizing: border-box;
     min-height: fit-content;
@@ -306,7 +306,7 @@ div{
 }
 .text-box small{
     position:absolute;
-    left: -150px;
+    left: -140px;
 }
 .container img{
     position: absolute;
@@ -341,4 +341,101 @@ div{
     border-radius: 5px;
     object-fit: cover;
 
+}
+.photo img:hover{
+    border: 1px solid;
+    border-color: orange;
+}
+/* Projects */
+.projects-all{
+    position: relative;
+    max-width: 1200px;
+    margin: 100px auto;
+}
+.projects-container img{
+    position: absolute;
+    margin-top: 5px;
+    width:100px;
+    border: 1px solid;
+    border-radius: 10%;
+}
+.projects-container h2{
+    margin-left: 120px;
+}
+.projects-container h2:hover{
+    /* color: orange; */
+    text-decoration: underline;
+}
+.projects-container p{
+    margin-left: 120px;
+    font-size: small;
+}
+/* Publications */
+.publications-container{
+    position:relative;
+    max-width:  1200px;
+    margin: 10px auto;
+}
+.publications-container::after{
+    content:"";
+    width: 3px;
+    height: 45px;
+    display:block;
+    background-color: orange;
+    position:absolute;
+    left:-10px;
+    top: 7px;
+}
+.publications-container small{
+    font-weight: lighter;
+    color: green;
+}
+.publications-container p{
+    color: maroon;
+}
+.publications-container h3:hover{
+    text-decoration: underline;
+    /* color: orange; */
+}
+/* Contact */
+#contact{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+}
+.contact-info-upper-container{
+    display:flex;
+    justify-content: center ;
+    border-radius: 2rem;
+    border: rgb(53,53,53) 0.1rem solid;
+    border-color: rgb(163,163,163);
+    background: (250, 250, 250);
+    margin: 2rem auto;
+    padding: 0.5rem;
+    width: fit-content;
+}
+.contact-info-container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:0.5rem;
+    margin: 1rem;
+}
+.contact-info-container p{
+    font-size: larger;
+}
+.contact-icon{
+    cursor: default;
+}
+.email-icon{
+    height:2.5rem;
+}
+/* footer */
+footer{
+    height: 26vh;
+    margin: 0 1rem;
+}
+footer p{
+    text-align: center;
 }
